@@ -1,0 +1,104 @@
+/* Color Palette */
+:root {
+    --light-gray: #E4E4ED;
+    --dark-navy: #292F61;
+    --purple: #644E9A;
+    --pink: #E85AA7;
+    --lavender: #A595CC;
+    --dark-gray: #555E6F;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+h1, h2 {
+    color: var(--purple);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-navy);
+    color: white;
+    padding: 10px 20px;
+}
+
+.header .logo {
+    font-size: 1.5em;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--lavender);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero .filters button {
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero .filters button:hover {
+    background-color: var(--purple);
+}
+
+/* Dashboard */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--dark-navy);
+    color: white;
+}
+
+.footer a {
+    color: var(--pink);
+    text-decoration: none;
+    margin: 0 10px;
+}
